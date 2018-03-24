@@ -42,8 +42,6 @@ $("input[type='text']").keypress(function(){
   }
 });
 
-$(".toggle").on("click", (function(){
+$(".toggle").click(function(){
   $("input[type='text']").fadeToggle();
-}));
-
-//font awesome doesn't work with the newer versions.  The on hover breaks and needs to be replaced with another tag wraped around the i tag. This messed up the normal span tags from working though
+});
